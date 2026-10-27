@@ -6,13 +6,6 @@ stays closed. They are built on
 [sequential-analysis](https://github.com/andre-a-no/sequential-analysis),
 which is licensed the same way.
 
-Two parts of this repository are licensed differently, under the Apache
-License 2.0, so that they can be used in any product:
-
-- `ts/ab-client` (npm `@sequentialist/ab-client`), the assignment of
-  variants that runs in browsers and apps;
-- `vectors/`, the test vectors that implementations of the assignment are
-  checked against.
 
 ## Do I need a commercial license?
 
@@ -69,12 +62,6 @@ so that the project can continue to be offered under both licenses. See
 [sequential-analysis](https://github.com/andre-a-no/sequential-analysis),
 которая лицензируется так же.
 
-Две части репозитория распространяются по лицензии Apache 2.0, чтобы их
-можно было использовать в любом продукте:
-
-- `ts/ab-client` (npm `@sequentialist/ab-client`) — назначение вариантов,
-  которое работает в браузерах и приложениях;
-- `vectors/` — тест-векторы, по которым проверяются реализации назначения.
 
 ## Нужна ли вам коммерческая лицензия?
 

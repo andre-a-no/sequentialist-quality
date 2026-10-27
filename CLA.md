@@ -20,7 +20,7 @@ The Russian text prevails in case of discrepancy. / При расхождени�
 **Лицензиар:** [ФИО / наименование], [паспортные данные или ОГРН], адрес электронной почты [—], учётная запись GitHub [—] (далее — «Участник»).
 
 ### 1. Термины
-1.1. **Программа** — программы для ЭВМ sequentialist (библиотеки sequentialist-core, sequentialist-ab и другие библиотеки семейства), их документация и сопутствующие материалы, исходный код которых размещён по адресу https://github.com/andre-a-no/sequentialist.
+1.1. **Программа** — программы для ЭВМ sequentialist (библиотеки sequentialist-core, sequentialist-ab и другие библиотеки семейства), их документация и сопутствующие материалы, исходный код которых размещён в репозиториях https://github.com/andre-a-no/sequentialist-core, https://github.com/andre-a-no/sequentialist-ab и других репозиториях по адресу https://github.com/andre-a-no, названия которых начинаются с «sequentialist».
 1.2. **Вклад** — любое произведение (программный код, документация, тесты, данные, иные материалы), которое Участник передаёт Компании для включения в Программу, в том числе через запрос на слияние (pull request), сообщение об ошибке с исправлением или иным способом, начиная с даты заключения настоящего договора.
 
 ### 2. Предоставляемые права
@@ -66,7 +66,7 @@ The Russian text prevails in case of discrepancy. / При расхождени�
 **Licensor:** [name], [ID or registration number], e-mail [—], GitHub account [—] (the "Contributor").
 
 ### 1. Definitions
-1.1. **Program** — the computer programs sequentialist (the libraries sequentialist-core, sequentialist-ab and the other libraries of the family), their documentation and accompanying materials, whose source code is published at https://github.com/andre-a-no/sequentialist.
+1.1. **Program** — the computer programs sequentialist (the libraries sequentialist-core, sequentialist-ab and the other libraries of the family), their documentation and accompanying materials, whose source code is published in the repositories https://github.com/andre-a-no/sequentialist-core, https://github.com/andre-a-no/sequentialist-ab and the other repositories at https://github.com/andre-a-no whose names begin with "sequentialist".
 1.2. **Contribution** — any work (code, documentation, tests, data, other material) the Contributor submits to the Company for inclusion in the Program, by a pull request or otherwise, from the date of this agreement.
 
 ### 2. Grant of rights

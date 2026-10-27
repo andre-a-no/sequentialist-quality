@@ -18,27 +18,25 @@ case the employer has to sign the CLA as well.
 
 ## Development
 
-Each library is a separate package under `packages/`; they share the
-`sequentialist` namespace (PEP 420, no `__init__.py` at that level).
+sequentialist-core is not on PyPI yet; until it is, install the version
+this package is tested with from its repository:
 
 ```
-python -m pip install -e packages/core -e packages/ab -e packages/quality
-cd packages/core && python -m unittest discover -s tests -t . && cd ../..
-cd packages/ab && python -m unittest discover -s tests -t . && cd ../..
-cd packages/quality && python -m unittest discover -s tests -t . && cd ../..
+python -m pip install "sequentialist-core @ git+https://github.com/andre-a-no/sequentialist-core@27f71847ea39cedf0a8e41a5f05042428a533443#subdirectory=packages/core"
+python -m pip install -e . ruff mypy
+python -m unittest discover -s tests -t .
 ruff check . && mypy
-cd ts/ab-client && npm ci && npm test
 ```
 
-- Every library runs on Python 3.8 and later and has no required
-  dependency besides sequential-analysis (CI checks both, `vermin` checks
-  the language level).
+- Every library runs on Python 3.8 and later and needs nothing but
+  sequentialist-core and sequential-analysis (CI checks both, `vermin`
+  checks the language level).
 - Statistics belong in sequential-analysis. A library describes a task,
   handles its data, decides and reports; it does not compute tests.
 - Every conclusion a library reports names its guarantee (`exact`,
   `asymptotic`, `model`, `approximate`, `none`), as the procedure of
   sequential-analysis states it.
-- `vectors/` and `schemas/` are generated (`tools/make_vectors.py`,
-  `tools/make_schemas.py`); CI fails if they differ from what the code
-  produces.
+- `schemas/` and the designed example plans are generated
+  (`tools/make_schemas.py`, `examples/make_scheme.py`); CI fails if they
+  differ from what the code produces.
 - New source files start with the SPDX header used throughout the project.

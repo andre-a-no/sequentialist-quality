@@ -39,9 +39,9 @@ yaml = ["sequentialist-core[yaml]>=0.1,<0.2"]
 quality = "sequentialist.quality.cli:register"
 
 [project.urls]
-Source = "https://github.com/andre-a-no/sequentialist"
-Issues = "https://github.com/andre-a-no/sequentialist/issues"
-"Commercial license" = "https://github.com/andre-a-no/sequentialist/blob/main/COMMERCIAL.md"
+Source = "https://github.com/andre-a-no/sequentialist-quality"
+Issues = "https://github.com/andre-a-no/sequentialist-quality/issues"
+"Commercial license" = "https://github.com/andre-a-no/sequentialist-quality/blob/main/COMMERCIAL.md"
 
 [tool.setuptools.dynamic]
 version = { attr = "sequentialist.quality.version.__version__" }
@@ -53,3 +53,32 @@ namespaces = true
 
 [tool.setuptools.package-data]
 "sequentialist.quality" = ["py.typed"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py38"
+extend-exclude = ["ts"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "RUF"]
+ignore = [
+    "RUF001", "RUF002", "RUF003",  # Unicode in strings and comments is intentional (Russian text, math)
+]
+
+[tool.ruff.lint.isort]
+known-first-party = ["sequentialist"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["E731", "RUF012"]
+
+[tool.mypy]
+python_version = "3.10"  # mypy checks types only; the code runs on 3.8 (see CI)
+mypy_path = "src"
+files = ["src/sequentialist"]
+namespace_packages = true
+explicit_package_bases = true
+check_untyped_defs = true
+no_implicit_optional = true
+strict_equality = true
+warn_redundant_casts = true
+warn_unused_ignores = true

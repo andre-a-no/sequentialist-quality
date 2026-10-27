@@ -8,8 +8,20 @@ characterised by
 this package runs them lot after lot, with switching rules, rework and
 resubmission, decisions of people, an audit trail and inspection records.
 
+Part of the [sequentialist](https://github.com/andre-a-no/sequentialist-core)
+family; built on
+[sequentialist-core](https://github.com/andre-a-no/sequentialist-core) (specs,
+the checkpointed engine, storage, audit log, reports).
+
 ```
-pip install sequentialist-quality         # Python 3.8+
+pip install sequentialist-quality         # Python 3.8+ (not on PyPI yet)
+```
+
+Until the packages are on PyPI, install from the repositories:
+
+```
+pip install "sequentialist-core @ git+https://github.com/andre-a-no/sequentialist-core@27f71847ea39cedf0a8e41a5f05042428a533443#subdirectory=packages/core"
+pip install "sequentialist-quality @ git+https://github.com/andre-a-no/sequentialist-quality"
 ```
 
 ## Plans
@@ -100,4 +112,10 @@ and a recovery.
   tables of ISO 2859 or ISO 39511; the tables of the standards are not
   reproduced here.
 
-License: GNU AGPL v3 or commercial; see COMMERCIAL.md.
+## License
+
+GNU AGPL v3 or a commercial license ([COMMERCIAL.md](COMMERCIAL.md)).
+Contributions need the [Contributor License Agreement](CLA.md); see
+[CONTRIBUTING.md](CONTRIBUTING.md).
+
+Contact: andrei@hobukob.ru, a.hobukob@gmail.com.

@@ -1,0 +1,26 @@
+# sequentialist-quality
+
+> Sequential acceptance sampling of lots, with designed plans, switching schemes, inspection records and audit.
+
+## Start here
+
+- [Обзор и частые вопросы — Русский](https://github.com/andre-a-no/sequentialist-quality/blob/main/docs/overview.ru.md): Russian-language introduction, workflow and limitations.
+- [Overview and FAQ](https://github.com/andre-a-no/sequentialist-quality/blob/main/docs/overview.md): plain-language purpose, workflow, limits and source references.
+- [README](https://github.com/andre-a-no/sequentialist-quality/blob/main/README.md): current capabilities and installation.
+- [Project metadata](https://github.com/andre-a-no/sequentialist-quality/blob/main/pyproject.toml): package identity, dependencies and compatibility.
+
+## Implementation and examples
+
+- [Plan design and operating characteristics](https://github.com/andre-a-no/sequentialist-quality/blob/main/src/sequentialist/quality/plans.py): attributable implementation or example.
+- [Lot lifecycle and switching](https://github.com/andre-a-no/sequentialist-quality/blob/main/src/sequentialist/quality/scheme.py): attributable implementation or example.
+- [Inspection example](https://github.com/andre-a-no/sequentialist-quality/blob/main/examples/incoming_inspection.py): attributable implementation or example.
+- [Example plan and scheme files](https://github.com/andre-a-no/sequentialist-quality/tree/main/examples/): attributable implementation or example.
+
+## Development
+
+- [Coding guidance](https://github.com/andre-a-no/sequentialist-quality/blob/main/AGENTS.md): repository map and checks.
+- [Owner guidance](https://github.com/andre-a-no/sequentialist-quality/blob/main/CLAUDE.md): preserved project rules.
+- [Contributing](https://github.com/andre-a-no/sequentialist-quality/blob/main/CONTRIBUTING.md): development and licensing.
+- [Tests](https://github.com/andre-a-no/sequentialist-quality/tree/main/tests): checked behavior.
+
+This is a curated navigation aid. It does not assert that any model or search engine automatically consumes it. Cite the linked source and retain its assumptions and release status.
